@@ -1,5 +1,7 @@
 # TLS Monitor
 
+[![Build Status](https://travis-ci.org/Zarthus/tls-monitor.svg?branch=master)](https://travis-ci.org/Zarthus/tls-monitor)
+
 Monitors existing infrastructure for expiring TLS certificates.
 
 This was written to function on a CI or with a cronjob.
