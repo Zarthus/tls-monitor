@@ -17,3 +17,14 @@ It requires python and bash.
 
 ./bin/tls-monitor.sh yourwebsite.com 7
 ```
+
+## Tests
+
+The unit tests connect directly to public services, notably badssl.com, please
+do not run them too often.
+
+To run them, run `make test` from the repo root.
+
+## License
+
+MIT
