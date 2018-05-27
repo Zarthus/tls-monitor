@@ -17,7 +17,7 @@ fi
 ExitCode=0
 ProgramDirectory="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-openssl s_client -connect ${ServerToCheck}:${PortToCheck} <<< 'Q' 2>/dev/null \
+openssl s_client -connect ${ServerToCheck}:${PortToCheck} -servername ${ServerToCheck} <<< 'Q' 2>/dev/null \
     | openssl x509 -noout -dates > ${TemporaryFileStorage} \
     | true # always succeed
 
