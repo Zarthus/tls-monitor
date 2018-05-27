@@ -6,7 +6,7 @@ Monitors existing infrastructure for expiring TLS certificates.
 
 This was written to function on a CI or with a cronjob.
 
-It requires python and bash.
+It requires python (2 and 3 both supported), openssl, and bash
 
 ## Usage
 
