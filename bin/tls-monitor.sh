@@ -2,6 +2,8 @@
 
 TemporaryFileStorage="./cert_will_expire.txt"
 
+trap "{ rm $TemporaryFileStorage }" SIGINT SIGTERM
+
 if [[ -z $1 || -z $2 ]]; then
     echo "Usage: $0 <website> <expiry_in_days> [port]"
     exit 1
